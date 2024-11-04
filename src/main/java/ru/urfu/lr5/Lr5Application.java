@@ -1,13 +1,13 @@
-package ru.urfu.lr4;
+package ru.urfu.lr5;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Lr4Application {
+public class Lr5Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Lr4Application.class, args);
+		SpringApplication.run(Lr5Application.class, args);
 	}
 
 }

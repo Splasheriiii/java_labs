@@ -1,12 +1,13 @@
-package ru.urfu.lr4.model;
+package ru.urfu.lr5.model;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 
-public enum Codes {
-    SUCCESS("success"),
-    FAILURE("failure");
+public enum Systems {
+    ERP("Enterprise Resource Planning"),
+    CRM("Custom Relationship Management"),
+    WMS("Warehouse Management System");
     private final String name;
-    Codes(String name) {
+    Systems(String name) {
         this.name = name;
     }
     @JsonValue

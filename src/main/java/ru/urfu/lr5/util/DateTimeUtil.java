@@ -1,4 +1,4 @@
-package ru.urfu.lr4.util;
+package ru.urfu.lr5.util;
 
 import java.text.SimpleDateFormat;
 

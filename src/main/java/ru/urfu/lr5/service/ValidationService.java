@@ -1,10 +1,10 @@
-package ru.urfu.lr4.service;
+package ru.urfu.lr5.service;
 
 import org.springframework.stereotype.Service;
 import org.springframework.validation.BindingResult;
-import ru.urfu.lr4.exception.UnsupportedCodeException;
-import ru.urfu.lr4.exception.ValidationFailedException;
-import ru.urfu.lr4.model.Request;
+import ru.urfu.lr5.exception.UnsupportedCodeException;
+import ru.urfu.lr5.exception.ValidationFailedException;
+import ru.urfu.lr5.model.Request;
 
 @Service
 public interface ValidationService {

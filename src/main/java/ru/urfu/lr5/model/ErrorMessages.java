@@ -1,4 +1,4 @@
-package ru.urfu.lr4.model;
+package ru.urfu.lr5.model;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 

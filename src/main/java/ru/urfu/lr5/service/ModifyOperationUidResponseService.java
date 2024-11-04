@@ -1,8 +1,8 @@
-package ru.urfu.lr4.service;
+package ru.urfu.lr5.service;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
-import ru.urfu.lr4.model.Response;
+import ru.urfu.lr5.model.Response;
 
 import java.util.UUID;
 

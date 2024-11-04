@@ -1,16 +1,12 @@
-package ru.urfu.lr4.model;
+package ru.urfu.lr5.model;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 
-public enum ErrorCodes {
-
-    EMPTY(""),
-    VALIDATION_EXCEPTION("ValidationException"),
-    UNKNOWN_EXCEPTION("UnknownException"),
-    UNSUPPORTED_EXCEPTION("UnsupportedException");
-
+public enum Codes {
+    SUCCESS("success"),
+    FAILURE("failure");
     private final String name;
-    ErrorCodes(String name) {
+    Codes(String name) {
         this.name = name;
     }
     @JsonValue

@@ -1,12 +1,12 @@
-package ru.urfu.lr4.service;
+package ru.urfu.lr5.service;
 
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-import ru.urfu.lr4.model.Request;
-import ru.urfu.lr4.util.DateTimeUtil;
+import ru.urfu.lr5.model.Request;
+import ru.urfu.lr5.util.DateTimeUtil;
 
 import java.util.Date;
 

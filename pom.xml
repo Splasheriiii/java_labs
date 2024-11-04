@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ru.urfu</groupId>
-	<artifactId>lr4</artifactId>
+	<artifactId>lr5</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>lr2</name>
-	<description>Лабораторная работа #4</description>
+	<description>Лабораторная работа #5</description>
 	<url/>
 	<licenses>
 		<license/>
