@@ -1,0 +1,263 @@
+{
+	"info": {
+		"_postman_id": "3b36276e-cf9e-48ed-842a-3d00efd4735f",
+		"name": "LR2",
+		"description": "Запросы к веб-апи из ЛР №2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34238218"
+	},
+	"item": [
+		{
+			"name": "UnsupportedCodeException",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"uid\": \"123\",\r\n\"operationUid\": \"123\",\r\n\"systemName\": \"123\",\r\n\"systemTime\": \"123\",\r\n\"source\": \"123\",\r\n\"communicationId\": 100,\r\n\"templateId\": 8,\r\n\"productCode\": 1500,\r\n\"smsCode\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/feedback",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"feedback"
+					]
+				},
+				"description": "Неподдерживаемый код запроса"
+			},
+			"response": []
+		},
+		{
+			"name": "NoError",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"uid\": \"1\",\r\n\"operationUid\": \"123\",\r\n\"systemTime\": \"123\",\r\n\"source\": \"123\",\r\n\"communicationId\": 100,\r\n\"templateId\": 8,\r\n\"productCode\": 1500,\r\n\"smsCode\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/feedback",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"feedback"
+					]
+				},
+				"description": "Успешное выполнение"
+			},
+			"response": []
+		},
+		{
+			"name": "NoUid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"uid\": \"\",\r\n\"operationUid\": \"123\",\r\n\"systemName\": \"123\",\r\n\"systemTime\": \"123\",\r\n\"source\": \"123\",\r\n\"communicationId\": 100,\r\n\"templateId\": 8,\r\n\"productCode\": 1500,\r\n\"smsCode\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/feedback",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"feedback"
+					]
+				},
+				"description": "Отсутствие обязательного поля"
+			},
+			"response": []
+		},
+		{
+			"name": "NoOperationUid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"uid\": \"0\",\r\n\"operationUid\": \"\",\r\n\"systemName\": \"123\",\r\n\"systemTime\": \"123\",\r\n\"source\": \"123\",\r\n\"communicationId\": 100,\r\n\"templateId\": 8,\r\n\"productCode\": 1500,\r\n\"smsCode\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/feedback",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"feedback"
+					]
+				},
+				"description": "Отсутствие обязательного поля"
+			},
+			"response": []
+		},
+		{
+			"name": "LongUid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"uid\": \"123456781234567812345678123456781\",\r\n\"operationUid\": \"123\",\r\n\"systemName\": \"123\",\r\n\"systemTime\": \"123\",\r\n\"source\": \"123\",\r\n\"communicationId\": 100,\r\n\"templateId\": 8,\r\n\"productCode\": 1500,\r\n\"smsCode\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/feedback",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"feedback"
+					]
+				},
+				"description": "Слишком длинное значение"
+			},
+			"response": []
+		},
+		{
+			"name": "LongOperationUid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"uid\": \"0\",\r\n\"operationUid\": \"123456781234567812345678123456781\",\r\n\"systemName\": \"123\",\r\n\"systemTime\": \"123\",\r\n\"source\": \"123\",\r\n\"communicationId\": 100,\r\n\"templateId\": 8,\r\n\"productCode\": 1500,\r\n\"smsCode\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/feedback",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"feedback"
+					]
+				},
+				"description": "Слишком длинное значение"
+			},
+			"response": []
+		},
+		{
+			"name": "NoSystemTime",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"uid\": \"0\",\r\n\"operationUid\": \"123\",\r\n\"systemName\": \"123\",\r\n\"systemTime\": \"\",\r\n\"source\": \"123\",\r\n\"communicationId\": 100,\r\n\"templateId\": 8,\r\n\"productCode\": 1500,\r\n\"smsCode\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/feedback",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"feedback"
+					]
+				},
+				"description": "Отсутствие обязательного поля"
+			},
+			"response": []
+		},
+		{
+			"name": "MinCommunicationId",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"uid\": \"0\",\r\n\"operationUid\": \"123\",\r\n\"systemName\": \"123\",\r\n\"systemTime\": \"123\",\r\n\"source\": \"123\",\r\n\"communicationId\": 0,\r\n\"templateId\": 8,\r\n\"productCode\": 1500,\r\n\"smsCode\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/feedback",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"feedback"
+					]
+				},
+				"description": "Слишком маленькое значение поля"
+			},
+			"response": []
+		},
+		{
+			"name": "MaxCommunicationId",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"uid\": \"0\",\r\n\"operationUid\": \"123\",\r\n\"systemName\": \"123\",\r\n\"systemTime\": \"123\",\r\n\"source\": \"123\",\r\n\"communicationId\": 100001,\r\n\"templateId\": 8,\r\n\"productCode\": 1500,\r\n\"smsCode\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/feedback",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"feedback"
+					]
+				},
+				"description": "Слишком болььшое значение поля"
+			},
+			"response": []
+		}
+	]
+}

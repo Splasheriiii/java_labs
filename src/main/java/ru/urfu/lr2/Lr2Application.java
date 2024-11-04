@@ -1,13 +1,13 @@
-package ru.urfu.lab1;
+package ru.urfu.lr2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Lab1Application {
+public class Lr2Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Lab1Application.class, args);
+		SpringApplication.run(Lr2Application.class, args);
 	}
 
 }
