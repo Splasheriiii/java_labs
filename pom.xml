@@ -9,10 +9,17 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ru.urfu</groupId>
+<<<<<<< Updated upstream
 	<artifactId>lab1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>lab1</name>
 	<description>Лабораторная работа №1</description>
+=======
+	<artifactId>lr3</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>lr2</name>
+	<description>Лабораторная работа #3</description>
+>>>>>>> Stashed changes
 	<url/>
 	<licenses>
 		<license/>
