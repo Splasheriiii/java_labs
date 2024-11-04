@@ -1,10 +1,10 @@
-package ru.urfu.lab1;
+package ru.urfu.lr4;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Lab1ApplicationTests {
+class Lr4ApplicationTests {
 
 	@Test
 	void contextLoads() {
